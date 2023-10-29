@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista zadań</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1> ToDo List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Zadanie</th>
+        <th>Termin wykonania</th>               <!-- NAGŁÓWEK TABELI -->
+        <th>Akcje</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="taskSearch" placeholder="Wyszukaj zadania" oninput="todo.setTerm(this.value)">
+            <label for="taskSearch"></label>
+        </td>
+        <td>
+
+        </td>
+    </tr>
+    </thead>
+
+
+
+    <tbody id="taskList">                      <!-- TREŚĆ TABELI-->
+
+
+    <tr >
+        <td>
+            <input type="checkbox" id="chocolate">
+            <label for="chocolate">Chocolate</label>
+        </td>
+        <td>
+            <input type="datetime-local" id="ChocolatedueDate">
+            <label for="ChocolatedueDate"></label>
+        </td>
+        <td>
+            <button onclick="todo.removeTask(this)">Usun</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="checkbox" id="macaroon">
+            <label for="macaroon">Chocolate</label>
+        </td>
+        <td>
+            <input type="datetime-local" id="macaroondueDate">
+            <label for="macaroondueDate"></label>
+        </td>
+        <td>
+            <button onclick="todo.removeTask(this)">Usun</button>
+        </td>
+    </tr>
+
+
+
+    <tr>
+        <td>
+            <input type="checkbox" id="chupachups">
+            <label for="chupachups">chupachups</label>
+        </td>
+        <td>
+            <input type="datetime-local" id="chupachupsdueDate">
+            <label for="chupachupsdueDate"></label>
+        </td>
+        <td>
+            <button onclick="todo.removeTask(this)">Usun</button>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            <input type="checkbox" id="bonbons">
+            <label for="bonbons">Bon Bons</label>
+        </td>
+        <td>
+            <input type="datetime-local" id="bonbonsdueDate">
+            <label for="bonbonsdueDate"></label>
+        </td>
+        <td>
+            <button onclick="todo.removeTask(this)">Usun</button>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            <input type="checkbox" id="candycanes">
+            <label for="candycanes">candy canes</label>
+        </td>
+        <td>
+            <input type="datetime-local" id="candycanesdueDate">
+            <label for="candycanesdueDate"></label>
+        </td>
+        <td>
+            <button onclick="todo.removeTask(this)">Usun</button>
+        </td>
+    </tr>
+
+
+
+<tfoot>
+    <tr>
+        <td>
+            <input type="text" id="newTask" value="" placeholder="Dodaj nowe zadanie" >
+            <label for="newTask"></label>
+        </td>
+        <td>
+            <input type="datetime-local" id="taskDueDate" value="">
+            <label for="taskDueDate"></label>
+        </td>
+        <td>
+            <button onclick="todo.addTask(this)">Dodaj zadanie</button>
+        </td>
+    </tr>
+</tfoot>
+    <!-- Pozostałe zadania -->
+
+    <script src="zadanie.js"></script>
+    </tbody>
+</table>
+
+
+</body>
+</html>

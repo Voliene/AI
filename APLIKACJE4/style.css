@@ -1,0 +1,56 @@
+
+body {
+    background-color: lightblue;
+    z-index:1;
+    padding: 150px;
+}
+div {
+    border: 3px solid #000; /* Grubość, styl i kolor borderu */
+    border-image: url('znaczek.png') 400 round; /* Obraz obramowania i ustawienia */
+    border-width: 20px;
+    border-height: 20px;
+    border-radius: 15px; /* Zaokrąglenie narożników */
+    background-color: #f1f1f1; /* Kolor tła */
+    padding: 40px; /* Padding wewnątrz borderu */
+    text-align: center; /* Wyśrodkowanie zawartości */
+    font-family: "Viner Hand ITC";
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Cień */
+
+}
+button{
+    border: 1px solid #000; /* Grubość, styl i kolor borderu */
+    border-image: url('znaczek.png') 400 round; /* Obraz obramowania i ustawienia */
+    text-align: center; /* Wyśrodkowanie zawartości */
+    display: flex;
+    justify-content: left;
+    border-width: 20px;
+    border-height: 20px;
+    border-radius: 10px; /* Zaokrąglenie narożników */
+    font-family: "Bradley Hand ITC";
+    transition: filter 0.3s ease, box-shadow 0.3s ease; /* Właściwości animowane */
+}
+button:hover{
+    filter: brightness(0.7); /* Stan po najechaniu myszą (zmniejszenie jasności) */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Stan po najechaniu myszą (cieniowanie) */
+    transition-delay: 0.1s; /* Opóźnienie efektu włączenia */
+}
+h1 {
+    color:black;
+    font-family: "Viner Hand ITC";
+    text-align: center; /* Wyśrodkowanie zawartości */
+}
+
+p {
+    color: #006400;
+    font-family: "Bradley Hand ITC";
+    font-size: 120%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Dodanie marginesu do kontenera */
+}
+
+
